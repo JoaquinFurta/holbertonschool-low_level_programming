@@ -6,6 +6,6 @@
 int main(void)
 {
 	int a;
-	printf("Size of an int:" % zu, a);
-	return (0);
+	printf("Size of an int:" %zu, a);
+	return (0)
 }
