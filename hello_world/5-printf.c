@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main-xd
- * return: Always 0 (Succces)
+ * main - Entry point
+ * Return: Always 0 (Succcess)
  *
  */
 int main(void)
 {
-	printf("with poper grammar, but the outcome is a pice of art,");
+	printf("with proper grammar, but the outcome is a piece of art,");
 	return (0);
 }
