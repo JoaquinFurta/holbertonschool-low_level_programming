@@ -3,6 +3,7 @@
 
 /**
  * main - xd
+ * printf - xd
  * Return: Always 0 (Success)
 */
 int main(void)
