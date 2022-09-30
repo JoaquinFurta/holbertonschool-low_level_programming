@@ -5,3 +5,4 @@
 #include <ctype.h>
 int print_alphabet(void);
 int _islower(int c);
+int _putchar(char c);
