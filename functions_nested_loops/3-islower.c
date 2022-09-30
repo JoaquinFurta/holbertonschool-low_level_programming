@@ -11,9 +11,12 @@ int _islower(int c)
 	for (i = 'a'; i <= 'z'; ++i)
 	{
 		if (c == i)
-			return (resultado);
+		{
+			resultado = 1;
+			i = 'z';
+		}
 		else
-			return (resultado);
+			resultado = 0;
 	}
-
+	return (resultado);
 }
