@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - xd
+ * _islower - xd
  * Return: 0, 1
+ * @c : xddd
  */
 int _islower(int c)
 {
