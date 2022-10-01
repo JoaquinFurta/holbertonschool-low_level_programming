@@ -2,7 +2,9 @@
 
 /**
  * times_table - xd
- * Return: 0,
+ * Return: 0
+ * @x - xd
+ * @y - fd,
  */
 int add(int x, int y)
 {
