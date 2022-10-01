@@ -4,52 +4,20 @@
  * jack_bauer - xd
  * Return: 0,
  */
-int jack_bauer(void)
+void jack_bauer(void)
 {
-	int m;
-	int x;
-	int z;
-	int h;
+	int h, m;
 
-	for (z = '0'; z <= '2'; z++)
+	for (h = 0; h < 24; h++)
 	{
-		if (z == '2')
+		for (m = 0; m < 60; m++)
 		{
-			for (h = '0'; h <= '3'; h++)
-			{
-				for (x = '0'; x <= '5' ; x++)
-				{
-
-					for (m = '0'; m <= '9'; m++)
-					{
-						_putchar(z);
-						_putchar(h);
-						_putchar(':');
-						_putchar(x);
-						_putchar(m);
-						_putchar('\n');
-					}
-				}
-			}
-		}
-		else
-		{
-			for (h = '0'; h <= '9'; h++)
-			{
-				for (x = '0'; x <= '5' ; x++)
-				{
-					for (m = '0'; m <= '9'; m++)
-					{
-						_putchar(z);
-						_putchar(h);
-						_putchar(':');
-						_putchar(x);
-						_putchar(m);
-						_putchar('\n');
-					}
-				}
-			}
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
 		}
 	}
-	return (0);
 }
