@@ -20,9 +20,9 @@ void times_table(void)
 				_putchar(' ');
 			else
 				_putchar (f / 10 + '0');
-				_putchar (f % 10 + '0');
-				_putchar (',');
-				_putchar(' ');
+			_putchar (f % 10 + '0');
+			_putchar (',');
+			_putchar(' ');
 		}
 		_putchar('\n');
 	}
