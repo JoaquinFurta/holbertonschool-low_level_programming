@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - xd
+ * add - xd
  * Return: 0
  * @x: xd
  * @y: fd
