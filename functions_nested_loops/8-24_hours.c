@@ -7,25 +7,25 @@
 int jack_bauer(void)
 {
 	int m;
-	int M;
-	int H;
+	int x;
+	int z;
 	int h;
 
-	for (H = '0'; H <= '2'; H++)
+	for (z = '0'; z <= '2'; z++)
 	{
-		if (H == '2')
+		if (z == '2')
 		{
 			for (h = '0'; h <= '3'; h++)
 			{
-				for (M = '0'; M <= '5' ; m++)
+				for (x = '0'; x <= '5' ; x++)
 				{
 
 					for (m = '0'; m <= '9'; m++)
 					{
-						_putchar(H);
+						_putchar(z);
 						_putchar(h);
 						_putchar(':');
-						_putchar(M);
+						_putchar(x);
 						_putchar(m);
 						_putchar('\n');
 					}
@@ -36,14 +36,14 @@ int jack_bauer(void)
 		{
 			for (h = '0'; h <= '9'; h++)
 			{
-				for (M = '0'; M <= '5' ; m++)
+				for (x = '0'; x <= '5' ; x++)
 				{
 					for (m = '0'; m <= '9'; m++)
 					{
-						_putchar(H);
+						_putchar(z);
 						_putchar(h);
 						_putchar(':');
-						_putchar(M);
+						_putchar(x);
 						_putchar(m);
 						_putchar('\n');
 					}
