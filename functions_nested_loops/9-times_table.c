@@ -8,12 +8,12 @@ void times_table(void)
 {
 	int h, m, f;
 
-	for (h = 0; h < 11; h++)
+	for (h = 0; h < 10; h++)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		for (m = 1; m < 11; m++)
+		for (m = 1; m < 10; m++)
 		{
 			f = h * m;
 			if (f / 10 == 0)
