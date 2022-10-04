@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _isdigit - xd
+ * _isdigit - xd
  * Return: 1,0
  * @c : integer
  */
