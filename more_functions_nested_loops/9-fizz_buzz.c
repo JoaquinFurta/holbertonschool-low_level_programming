@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main- xd
+ * Return: dea
  */
 int main(void)
 {
@@ -19,7 +20,8 @@ int main(void)
 			if (i % 3 != 0 && i % 5 != 0)
 				printf("%d", i);
 		}
-		printf(" ");
+		if (i <= 99)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
