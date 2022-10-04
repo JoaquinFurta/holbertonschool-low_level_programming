@@ -4,7 +4,7 @@
  * Return: 1,0
  * @c : integer
  */
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	int i;
 	int resultado;
