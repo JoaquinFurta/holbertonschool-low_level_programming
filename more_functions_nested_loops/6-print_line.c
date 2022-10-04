@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - xd
+ * @n : integer
  */
 void print_line(int n)
 {
