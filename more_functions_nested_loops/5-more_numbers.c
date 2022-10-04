@@ -9,13 +9,12 @@ void more_numbers(void)
 
 	for (z = 1 ; z <= 10; z++)
 	{
-		for (i = '0'; i <= '9'; i++)
-			_putchar(i);
-		for (i = '0'; i <= '4'; i++)
+		for (i = 0; i <= 14; i++)
 		{
-			_putchar('1');
-			_putchar(i);
+			if (i / 10 != 0)
+				_putchar(i + '0');
+			_putchar(i % 10 + '0');
 		}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
