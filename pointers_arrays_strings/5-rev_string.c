@@ -20,7 +20,7 @@ void rev_string(char *s)
 		var = s[contador];
 		s[contador] = s[i];
 		s[i] = var;
-		i--;
-		contador++;
+		i++;
+		contador--;
 	}
 }
