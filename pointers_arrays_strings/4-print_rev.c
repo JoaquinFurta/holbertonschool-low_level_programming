@@ -15,4 +15,5 @@ void print_rev(char *s)
 		contador++;
 	for (i = contador; i >= 0; i--)
 		_putchar(s[i]);
+	_putchar('\n')
 }
