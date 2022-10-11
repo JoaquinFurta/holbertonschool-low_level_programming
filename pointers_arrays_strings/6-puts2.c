@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _puts2 - xd
+ * puts2 - xd
  * @stri : des
  */
-void _puts2(char *stri)
+void puts2(char *stri)
 {
 	int i;
 
