@@ -15,7 +15,7 @@ void rev_string(char *s)
 		contador++;
 	i = 0;
 	contador--;
-	while (contador-- > i)
+	while (contador > i)
 	{
 		var = s[contador];
 		s[contador] = s[i];
