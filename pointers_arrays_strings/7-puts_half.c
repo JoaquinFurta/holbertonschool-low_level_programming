@@ -18,5 +18,5 @@ void puts_half(char *str)
 	else
 		for (i = contador / 2 + 1; str[i] != '\0'; i++)
 			_putchar(str[i]);
-	_putchar('\n')
+	_putchar('\n');
 }
