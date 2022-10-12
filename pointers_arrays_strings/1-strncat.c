@@ -6,7 +6,7 @@
  * @n: dsd
  * Return: dest
  */
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int contador = 0;
