@@ -3,25 +3,19 @@
  * _strncat - xd
  * @src: des
  * @dest: ss
- * @n: dsd
+ * @n: dede
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int contador = 0;
-	int largo = 0;
+	int largo;
+	int len;
 
-	for (i = 0; src[i] != '\0'; i++)
-		contador++;
+	for (len = 0; dest[len] != '\0'; len++);
 
-	for (i = 0; dest[i] != '\0'; i++)
-		largo++;
+	for (largo = 0; largo < n && src[largo]; largo++)
+		dest[largo + len] = src[largo];
 
-
-	for (i = 0; i < n; i++)
-		dest[contador + largo] = src[i];
-
-	dest[largo + n] = '\0';
+	dest[largo + len] = '\0';
 	return (dest);
 }
