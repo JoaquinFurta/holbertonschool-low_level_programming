@@ -1,8 +1,8 @@
 #include "main.h"
 
-/*
+/**
  * _puts_recursion - xd
- * @s - fdf
+ * @s : fdf
  */
 void _puts_recursion(char *s)
 {
