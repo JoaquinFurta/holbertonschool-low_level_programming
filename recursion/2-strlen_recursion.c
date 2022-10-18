@@ -3,7 +3,7 @@
 /**
  * _strlen_recursion - xd
  * @s : fdf
- * Return : int
+ * Return: return int
  */
 int _strlen_recursion(char *s)
 {
