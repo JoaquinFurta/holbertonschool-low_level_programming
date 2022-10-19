@@ -21,14 +21,13 @@ int main(int argc, char *argv[])
 		for (x = 0; argv[i][x] != '\0'; x++)
 		{
 
-			if (argv[i][x] < 0 || argv[i][x] > 9)
+			if (argv[i][x] < 48 || argv[i][x] > 57)
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-				resultado = atoi(argv[i]) + resultado;
 		}
+		resultado = atoi(argv[i]) + resultado;
 	}
 	printf("%d\n", resultado);
 	return (0);
