@@ -15,12 +15,12 @@ char *_strdup(char *str)
 	while (str[mem] != '\0')
 		mem++;
 
-	p = malloc(mem++);
+	p = malloc(mem);
 
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i <= mem; i++)
+	for (i = 0; i < mem; i++)
 		p[i] = str[i];
 
 	return (p);
