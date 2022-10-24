@@ -19,6 +19,14 @@ int *array_range(int min, int max)
 
 	p = malloc(len * 4);
 
+
+	while (len - 1 >= 0)
+	{
+		p[len - 1] = max;
+		max--;
+		len--;
+	}
+
 	if (p == NULL)
 		return (NULL);
 
