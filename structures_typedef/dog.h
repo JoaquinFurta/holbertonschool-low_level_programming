@@ -3,7 +3,7 @@
 
 /**
  * struct dog - dog
- * @char: name of the dog
+ * @name: name of the dog
  * @age: age of the dog
  * @owner: owner
  */
