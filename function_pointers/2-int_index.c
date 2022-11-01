@@ -20,7 +20,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			i++;
 		else
 		{
-			resultado = array[i];
+			resultado = i;
 			i = size;
 
 		}
