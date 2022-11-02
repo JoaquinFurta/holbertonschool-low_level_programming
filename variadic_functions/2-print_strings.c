@@ -10,19 +10,21 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
+	char *str;
 	va_list n_para;
 
 	va_start(n_para, n);
 
 	for (i = 0; i < n; i++)
 	{
-		if (va_arg(n_para, char *) == NULL)
+		str = va_arg(n_para, char *);
+		if (str == NULL)
 			printf("(nil)");
 		else
 
-			printf("%s", va_arg(n_para, char));
+			printf("%s", str);
 
-		if (i != (n - 1) && separator != NULL)
+		if (i < (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 
