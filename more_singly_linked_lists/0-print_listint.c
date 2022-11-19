@@ -8,9 +8,9 @@
  * @h: header of the list
  * Return: Number of nodes of the list
  */
-size_t print_listint(const listint_t *h)
+size_t print_listint(const listint_t *h);
 {
-	int cont = 0;
+	size_t cont = 0;
 
 	while (h != NULL)
 	{
