@@ -24,7 +24,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		mem++;
 	}
 	temp = malloc(sizeof(*head));
-	if ((temp == NULL) || (aux == NULL))
+	if (temp == NULL)
 	{
 		free(temp);
 		return (NULL);
