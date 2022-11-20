@@ -18,13 +18,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	aux = *head;
 
-	while ((aux != NULL) && (mem <= idx - 1))
+	while (mem <= idx - 1)
 	{
 		aux = aux->next;
 		mem++;
 	}
 	temp = malloc(sizeof(*head));
-	if (temp == NULL)
+	if ((temp == NULL) || (aux == NULL))
 	{
 		free(temp);
 		return (NULL);
