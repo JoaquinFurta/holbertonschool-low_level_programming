@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_listint - Realease the memory allocated for a list
+ * free_listintxd - Realease the memory allocated for a list
  * @head: A pointer to the first node of the list
  * Return: 0 if success
  */
 
-int free_listint(listint_t *head)
+int free_listintxd(listint_t *head)
 {
 	if (head)
 	{
