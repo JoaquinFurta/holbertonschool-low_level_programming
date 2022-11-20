@@ -13,10 +13,10 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int mem = 1;
+	unsigned int mem = 0;
 	listint_t *temp = NULL;
 
-	while ((*head != NULL) && (mem <= idx))
+	while ((*head != NULL) && (mem <= idx - 1))
 	{
 		*head = (*head)->next;
 		mem++;
