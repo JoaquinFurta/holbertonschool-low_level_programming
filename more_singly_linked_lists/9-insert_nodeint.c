@@ -18,7 +18,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	aux = *head;
 
-	while ((aux != NULL) && (mem <= idx + 1))
+	while ((aux != NULL) && (mem <= idx - 1))
 	{
 		aux = aux->next;
 		mem++;
@@ -34,7 +34,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	temp->n = n;
 
-	if (idx == 0)
+	if (idx < 0)
 	{
 		temp->next = *head;
 		*head = temp;
