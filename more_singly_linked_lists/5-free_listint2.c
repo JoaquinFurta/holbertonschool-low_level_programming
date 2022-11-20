@@ -11,10 +11,10 @@ int free_listintxd(listint_t *head)
 {
 	if (head)
 	{
-		free_listint(head->next);
+		free_listintxd(head->next);
 		free(head);
 	}
-	return(0)
+	return (0);
 }
 
 /**
@@ -26,6 +26,6 @@ void free_listint2(listint_t **head)
 {
 	if (head == NULL)
 		return;
-	free_listint(*head);
+	free_listintxd(*head);
 	head = NULL;
 }
