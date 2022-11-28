@@ -10,7 +10,7 @@
  * Return: 1 if success , - 1 if not
  */
 
-int delete_nodeint_at_index(dlistint_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	unsigned int mem = 1;
 	int res = -1;
