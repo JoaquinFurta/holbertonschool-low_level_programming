@@ -10,7 +10,7 @@
  * Return: data of the node
  */
 
-listint_t *get_nodeint_at_index(dlistint_t *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int mem = 1;
 	dlistint_t *temp = NULL;
