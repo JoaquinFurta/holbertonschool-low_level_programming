@@ -4,28 +4,28 @@
 /**
  * insert_dnodeint_at_index - adds a node to the list
  *
- * @head: A pointer to the first node of the list
+ * @h: A pointer to the first node of the list
  * @idx: index where the new node should be added
  * @n: int to be charged to the list
  *
  * Return: addres of the new node or null if Fails
  */
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int mem = 0;
 	dlistint_t *temp = NULL, *aux;
 
-	aux = *head;
+	aux = *h;
 
-	while ((aux != NULL) && (mem < idx))
+	while ((aux->next != NULL) && (mem < idx))
 	{
 		aux = aux->next;
 		mem++;
 	}
 
 
-	temp = malloc(sizeof(*head));
+	temp = malloc(sizeof(*h));
 	if (temp == NULL)
 		return (NULL);
 
@@ -36,11 +36,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 		temp->next = aux;
 		aux->prev = temp;
 		temp->prev = NULL;
-		*head = temp;
+		*h = temp;
 	}
 	else if (aux != NULL)
 	{
-	 	temp->next = aux;
+		temp->next = aux;
 		temp->prev = aux->prev;
 		aux->prev = temp;
 	}
