@@ -18,7 +18,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	aux = *h;
 
-	while ((aux->next != NULL) && (mem < idx))
+	while ((aux != NULL) && (mem < idx))
 	{
 		aux = aux->next;
 		mem++;
